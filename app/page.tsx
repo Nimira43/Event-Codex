@@ -1,9 +1,9 @@
-const Home = () => {
-  return ( 
+import React from 'react'
+
+export default function Home() {
+  return (
     <>
-      <h1>Event Codex</h1>
+    <h1>Event Codex</h1>
     </>
-   )
+  )
 }
- 
-export default Home

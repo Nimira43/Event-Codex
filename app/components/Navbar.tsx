@@ -12,7 +12,7 @@ export function Navbar() {
           <span className='text-[#e6b63c]'> Codex</span>
         </h4>
       </Link>
-      
+      <button>Sign up to Event Codex</button>
     </div>
   )
 }

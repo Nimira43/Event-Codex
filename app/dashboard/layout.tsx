@@ -19,6 +19,11 @@ export default function DashboardLayout({children}: {children: ReactNode}) {
                 </p>
               </Link>
             </div>
+            <div className='flex-1'>
+              <nav className='grid items-start px-2 lg:px-4'>
+                
+              </nav>
+            </div>
           </div>
         </div>
       </div>

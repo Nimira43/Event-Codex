@@ -27,6 +27,11 @@ export default function DashboardLayout({children}: {children: ReactNode}) {
             </div>
           </div>
         </div>
+        <div className='flex flex-col'>
+          <header className='flex h-14 items-center gap-4 border-b border-[#daa520] bg-[#eee]/40 px-4 lg:h-[60px] lg:px-6'>
+            <h1>Navbar</h1>
+          </header>
+        </div>
       </div>
     </>
   )

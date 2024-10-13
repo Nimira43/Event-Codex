@@ -1,6 +1,10 @@
-import { CalendarCheck, HomeIcon, LucideProps, Settings2, Users } from "lucide-react"
-import Link from "next/link"
-import { ForwardRefExoticComponent, RefAttributes } from "react"
+'use client'
+
+import { cn } from '@/lib/utils'
+import { CalendarCheck, HomeIcon, LucideProps, Settings2, Users } from 'lucide-react'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+import { ForwardRefExoticComponent, RefAttributes } from 'react'
 
 interface iAppProps {
   id: number
@@ -37,11 +41,21 @@ export const dashboardLinks: iAppProps[] = [
 ]
 
 export function DashboardLinks() {
+  const pathname = usePathname()
 
   return (
     <>
       {dashboardLinks.map((link) => (
-        <Link key={link.id} href={link.href}>
+        <Link 
+          className={cn(
+            pathname === link.href 
+              ? 'text-[#ffa500] bg-[#111]' 
+              : 'text-muted-foreground hover:text-foreground',
+              'flex items-center, gap-3 rounded-lg px-3 py-2 transition-all hover:text-[#daa520]' 
+          )} 
+          key={link.id} 
+          href={link.href}
+        >
           <link.icon className='size-4' />
           {link.name}
         </Link>

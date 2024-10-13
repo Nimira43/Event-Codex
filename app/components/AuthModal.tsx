@@ -10,7 +10,7 @@ export function AuthModal() {
         <Button>Start for Free</Button>
       </DialogTrigger>
       <DialogContent className='sm:max-w-[360px]'>
-        <DialogHeader className='flex flex-row items-center gap-2'>
+        <DialogHeader className='flex flex-row justify-center items-center gap-2'>
           <Image src={Logo} alt='Logo' className='size-10'/>
           <h4 className='text-3xl font-semibold'>
             Event

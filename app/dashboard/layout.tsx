@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { ReactNode } from 'react'
 import Logo from '@/public/logo.png'
 import { DashboardLinks } from '../components/DashboardLinks'
-import { Sheet, SheetTrigger } from '@/components/ui/sheet'
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import { Button } from '@/components/ui/button'
 import { Menu } from 'lucide-react'
 
@@ -42,6 +42,11 @@ export default function DashboardLayout({children}: {children: ReactNode}) {
                   <Menu className='size-5'/>                
                 </Button>
               </SheetTrigger>
+              <SheetContent side='left' className='flex flex-col bg-[#eee]'>
+                <nav className='grid gap-2'>
+                  <DashboardLinks />
+                </nav>
+              </SheetContent>              
             </Sheet>
           </header>
         </div>

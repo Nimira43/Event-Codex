@@ -13,6 +13,7 @@ export function AuthModal() {
       </DialogTrigger>
       <DialogContent className='sm:max-w-[360px]'>
         <DialogHeader className='flex flex-row justify-center items-center gap-2 p-3 rounded-md mx-6'>
+          
           <Image src={Logo} alt='Logo' className='size-10'/>
           <h4 className='text-3xl font-semibold'>
             Event

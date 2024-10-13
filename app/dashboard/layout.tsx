@@ -43,7 +43,7 @@ export default function DashboardLayout({children}: {children: ReactNode}) {
                 </Button>
               </SheetTrigger>
               <SheetContent side='left' className='flex flex-col bg-[#eee]'>
-                <nav className='grid gap-2'>
+                <nav className='grid gap-2 mt-10'>
                   <DashboardLinks />
                 </nav>
               </SheetContent>              

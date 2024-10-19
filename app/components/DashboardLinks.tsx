@@ -49,7 +49,7 @@ export function DashboardLinks() {
         <Link 
           className={cn(
             pathname === link.href 
-              ? 'text-[#ffa500] bg-[#111]' 
+              ? 'text-[#ffa500] bg-[#ddd]' 
               : 'text-muted-foreground hover:text-foreground',
               'flex items-center, gap-3 rounded-lg px-3 py-2 transition-all hover:text-[#daa520]' 
           )} 

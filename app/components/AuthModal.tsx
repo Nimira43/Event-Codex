@@ -20,7 +20,7 @@ export function AuthModal() {
             <span className='text-[#ffa500]'> Codex</span>
           </h4>
         </DialogHeader>
-        <div className="flex flex-col mt-5 gap-3">
+        <div className='flex flex-col mt-5 gap-3'>
           <form action={async () => {
             'use server'
             await signIn('google')

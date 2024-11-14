@@ -39,3 +39,17 @@ h2 span:hover {
   transition: 0s;
 }
 
+h2 span i:before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 8px;
+  background: #b8860b;
+  top: 0;
+  left: -4px;
+  box-shadow: 0 53px #111,
+              37px 53px #111,
+              36px 0 #111;
+  opacity: 0;
+}
+

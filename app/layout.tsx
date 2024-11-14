@@ -7,7 +7,6 @@ const poppins = Poppins({
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900']
 })
 
-
 export const metadata: Metadata = {
   title: 'Codex',
   description: 'App using Next, TypeScript, Tailwind, Shadcn, Supabase Postgres, Prisma, Auth JS, Nylas, Vercel and Conform',

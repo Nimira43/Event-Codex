@@ -1,6 +1,8 @@
 {
   "name": "codex",
   "version": "0.1.0",
+  "description": "App using Next, TypeScript, Tailwind, Shadcn, Supabase Postgres, Prisma, Auth JS, Nylas, Vercel and Conform",
+  "author": "NimiraTech",
   "private": true,
   "scripts": {
     "dev": "next dev",

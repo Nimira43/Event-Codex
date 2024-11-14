@@ -34,3 +34,8 @@ h2 span {
   transition: 0.5s;
 }
 
+h2 span:hover {
+  filter: blur(0);
+  transition: 0s;
+}
+
